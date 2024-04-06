@@ -1,0 +1,56 @@
+/* Basic Reset */
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sans-serif', Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #ffffff; /* Classic white background for a clean, airy feel */
+    color: #333; /* Soft black for readability */
+}
+
+header {
+    background: #333; /* Dark gray, almost black for a strong header presence */
+    color: #f2f2f2; /* Off-white for text to ensure it pops against the dark background */
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e74c3c 3px solid; /* Bright red as an accent color for visual interest */
+}
+
+nav#menuBar ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav#menuBar ul li {
+    display: inline;
+}
+
+nav#menuBar ul li a {
+    text-decoration: none;
+    color: #f2f2f2; /* Maintaining off-white text for clear navigation */
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+nav#menuBar ul li a:hover, nav#menuBar ul li a:focus {
+    background-color: #e74c3c; /* Bright red for hover effects, adding dynamism */
+    color: #ffffff; /* Pure white text for contrast and readability */
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    nav#menuBar ul li {
+        display: block;
+        text-align: center;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Form</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+  }
+
+  .form-container {
+    width: 300px; /* Set the width of the form */
+    padding: 20px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  input[type=text], input[type=email], textarea {
+    width: 100%; /* Full width */
+    padding: 12px;
+    margin: 8px 0; /* Margin top and bottom */
+    display: inline-block;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure padding doesn't affect the box size */
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0; /* Margin top and bottom */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Contact Us</h2>
+  <form action="mailto:info@lotusbiotech.com" method="post" enctype="text/plain">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="email">Your Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+    <input type="submit" value="Send">
+  </form>
+</div>
+
+</body>
+</html>

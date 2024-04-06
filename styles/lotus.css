@@ -1,0 +1,267 @@
+
+ 
+    .title{
+        font-size: 16px;
+        font-family:Roboto,Arial;
+        
+        color:white;
+        font-style:italic;
+        text-align:center;
+       
+        
+    }
+.menublock{
+    border: 0px;
+    border-style:solid;
+    border-radius: 0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    position:fixed;
+    
+    left:0;
+    right:0;
+    top:0;
+    z-index:1;
+    border-bottom:2px;
+    border-style:solid;
+    border-color:lightcoral;
+}
+body{
+    background-color:#f4f4f4;;
+    margin:0px;
+    padding:0px;
+    font-family:Roboto,Arial;
+    padding-top:75px;
+    
+}
+.menubox{
+    
+    border: 0px;
+    border-style:solid;
+    height:60px;
+    background-color:#333;
+    flex:1;
+    align-items: center;
+    text-align:center;
+    color: white;
+    padding-top:10px;
+}
+.logobox{
+    padding-top:10px;
+    border:0;
+    border-style: solid;
+    height: 60px;
+    align-items: center;
+    text-align:center;
+    background-color:  #333;
+    flex:1;
+    padding-right:75px;
+    display:block;
+    text-decoration:none;
+}
+.logobox:hover{
+    font-weight:bold;
+    cursor:pointer;
+    transition: background-color .15s ease;
+    
+}
+.logo{
+    height:50px;
+    width:50px;
+
+
+}
+.logo:hover{
+    height:55px;
+    width:55px;
+    cursor:pointer;
+    transition:.15s ease;
+
+}
+.menubox:hover{
+    
+    font-weight:bold;
+    cursor:pointer;
+   
+    transition: background-color .15s ease;
+}
+
+
+.mainbody{
+    display:flex;
+    flex-direction:column;
+    justify-content: start;
+    
+    position:absolute;
+    top:60px;
+    right:0;
+    left:0;
+    padding-bottom: 50px;
+    font-size:18px;
+    padding-top:50px;
+    padding-left: 15px;
+    padding-right:15px;
+    text-indent:80px;
+    overflow-wrap: break-word;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+.mainbodycontact{
+  
+    position:absolute;
+    top:60px;
+    right:0;
+    left:0;
+    padding-bottom: 50px;
+    font-size:18px;
+    padding-top:50px;
+    padding-left: 15px;
+    padding-right:15px;
+    
+   
+}
+.footer{
+
+    
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    left:0px;
+  
+   
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    background-color:#333;
+    color:white;
+
+} 
+.menubox a {
+    text-decoration: none; /* Removes the underline */
+    color: white; /* Sets the text color */
+    display: block; /* Makes the link fill the container for better clickability */
+    height: 100%; /* Ensures the link fills the entire height of its parent */
+    line-height: 50px; /* Centers the text vertically */
+}
+
+
+
+@media (max-width:600px){
+    .title{
+  font-size: 10px;
+    }
+    .menubox{
+        font-size: 11px;
+
+    }
+    .footer{
+        font-size: 10px;
+
+    }
+    .aboutus{
+        font-size:12px;
+        text-indent:60px;
+    }
+    .logobox{
+        padding-right:5px;
+        
+    }
+    .mainbody{
+        text-indent: 75px;
+        font-size:13px;
+
+    }
+    .mainbodyresearch{
+        font-size:12px;
+        text-indent:25px;
+    }
+    .mainbodypubs{
+        font-size:12px;
+
+    }
+   
+}
+
+@media(min-width: 601px ) and (max-width:700px){
+
+    .title{
+        font-size: 11px;
+
+    }
+    .mainbody{
+        text-indent:100px;
+        font-size:14px;
+    }
+
+}
+@media(min-width: 701px) and (max-width:850px){
+.title{
+font-size:12px;
+
+}
+   .logobox{
+    padding-right: 20px;
+
+   }
+
+
+}
+.mainbodypubs{
+    padding-right:100px;
+    padding-left:100px;
+    border-right: 1px;
+    border-left: 1px;
+    border-color: gray;
+    border-style:solid;
+
+
+}
+.pubtitle{
+    font-size:15px;
+
+}
+
+.researchlist{
+   text-indent:0px;
+    margin-top:10px;
+    overflow-wrap: break-word;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+}
+.mainbodyresearch{
+    border:1px;
+    border-style:solid;
+    position:absolute;
+    top:50px;
+    right:0;
+    left:0;
+    padding-bottom: 50px;
+   
+    padding-top:50px;
+    padding-left: 30px;
+    padding-right:30px;
+  
+    text-indent:75px;
+
+    overflow-wrap: break-word;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+}
+.notoginseng{
+    position: absolute;
+    right:0px;
+    left:0px;
+    
+    width: 100%; /* Makes the image fully responsive */
+    max-width: 100%; /* Ensures image is never more than 100% of its container */
+    height: auto; /* Maintains aspect ratio */
+    padding-bottom: 150px;
+  
+}
